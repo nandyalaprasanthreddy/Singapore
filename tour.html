@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SINGAPORE Tour</title>
+    <link rel="stylesheet" href="tour.css" />
+  </head>
+  <body>
+    <form action="" onsubmit="calculateCost()">
+      <div><h1>SINGAPORE TOURISM</h1></div>
+      <div>
+        <table>
+          <tr>
+            <td><label for="">Name</label></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td><label for="">Phone no</label></td>
+            <td><input type="tel" name="" id="" /></td>
+          </tr>
+          <tr>
+            <td><label for="">Email ID</label></td>
+            <td><input type="mail" /></td>
+          </tr>
+          <tr>
+            <td><label for="">Number of Persons</label></td>
+            <td><input type="text" id="person" /></td>
+          </tr>
+          <tr>
+            <td><label for="">Prefer Stay</label></td>
+            <td>
+              <input type="radio" class="stay" name="fs" /><label for=""
+                >Yes</label
+              >
+              <input type="radio" class="stay" name="fs" /><label
+                for=""
+                onclick="disable()"
+                >No</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Number of Days Stay</label></td>
+            <td><input type="text" id="staydays" /></td>
+          </tr>
+          <tr>
+            <td rowspan="6">
+              <label for="">Places you would like to visit</label>
+            </td>
+            <td>
+              <input type="checkbox" class="checkbox" value="350" /><label
+                for=""
+                >Places of Pilgrimage</label
+              ><br />
+              <input type="checkbox" class="checkbox" value="430" /><label
+                for=""
+                >Places of Heritage</label
+              ><br />
+              <input type="checkbox" class="checkbox" value="780" /><label
+                for=""
+                >Hills</label
+              ><br />
+              <input type="checkbox" class="checkbox" value="1200" /><label
+                for=""
+                >Falls</label
+              ><br />
+              <input type="checkbox" class="checkbox" value="270" /><label
+                for=""
+                >Beach</label
+              ><br />
+              <input type="checkbox" class="checkbox" value="4500" /><label
+                for=""
+                >Places of Adventures</label
+              >
+            </td>
+          </tr>
+        </table>
+        <button id="btn" type="submit">Calculate Cost</button>
+        <b id="output"></b>
+      </div>
+    </form>
+    <script src="./tour.js"></script>
+  </body>
+</html>
